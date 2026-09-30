@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 st.title("🤖 Mini RAG Q&A")
-st.write("Paste a docuement, store it in ChromaDB,ans ask questions about it .")
+st.write("Paste a document, store it in ChromaDB,ans ask questions about it .")
 
 
 @st.cache_resource
@@ -32,7 +32,7 @@ document=st.text_area(
     placeholder="Paste your notes,article,syllabus,etc."
 
 )
-if st.button("+ Add document");
+if st.button("+ Add document"):
     if not document.strip():
         st.warning("please enter some text.")
     else:
